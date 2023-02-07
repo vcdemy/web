@@ -1,0 +1,19 @@
+<html>
+<body>
+ <form action="" method="GET" onsubmit="getArguments(this);">
+   First Name: <input name="firstname" type="text" /><br/>
+   Last Name: <input name="lastname" type="text" /><br/>
+   <input type="submit" value="Submit" />
+ </form>
+ <script>
+   function getArguments(form) {
+      var data = "";
+      data += "First Name: " + form.firstname.value + "\n";
+      data += "Last Name: " + form.lastname.value
+
+      alert("Data:\n" + data);
+      return false;
+    }
+ </script>
+</body>
+</html>
